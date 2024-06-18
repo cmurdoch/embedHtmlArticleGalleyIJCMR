@@ -9,7 +9,7 @@
  *}
 {include file=$headerTemplatePath}
 {include file=$breadcrumbsTemplatePath}
-		<div id="htmlContainer">
+		<div id="htmlContainer" class="container-fluid container-page">
 			{if !$isLatestPublication}
 				<div class="galley_view_notice">
 					<div class="galley_view_notice_message" role="alert">
@@ -19,7 +19,7 @@
 			{/if}
 			{$html}
 			{* UZH CHANGE OJS-62 sui-generis script for numbering of paragraphs *}
-			<script>
+			<!-- <script>
 				$('.content p').each(function(){
 					var nrid = $(this).attr('id');
 					if (nrid) {
@@ -27,7 +27,7 @@
 						$(this).replaceWith('<p class="nr">'+nrid2+'</p>');
 					}
 				});
-			</script>
+			</script> -->
 			{* END CHANGE OJS-62 *}
 
 			{* UZH CHANGE OJS-79 (GISo) script for responsive tables *}

@@ -12,28 +12,31 @@
  *       sidebars have been configured for thesite.
  *}
 
-</main><!-- pkp_structure_main -->
+</main><!-- htmlGalley -->
 
 </div><!-- pkp_structure_content -->
 
-<div class="pkp_structure_footer_wrapper" role="contentinfo">
-	<a id="pkp_content_footer"></a>
-
-	<div class="pkp_structure_footer">
-
-		{if $pageFooter}
-			<div class="pkp_footer_content">
-				{$pageFooter}
+<footer class="site-footer">
+	<div class="container-fluid container-footer">
+		{if $hasSidebar}
+			<div class="sidebar_wrapper" role="complementary">
+				{call_hook name="Templates::Common::Sidebar"}
 			</div>
 		{/if}
-
-		<div class="pkp_brand_footer" role="complementary">
-			<a href="{url page="about" op="aboutThisPublishingSystem"}">
-				<img alt="{translate key="about.aboutThisPublishingSystem"}" src="{$baseUrl}/{$brandImage}">
-			</a>
+		<div class="additional-footer-info">
+			{if $pageFooter}
+				<div class="user-page-footer">
+					{$pageFooter}
+				</div>
+			{/if}
+			<div class="pkpbrand-wrapper" role="complementary">
+				<a href="{url page="about" op="aboutThisPublishingSystem"}">
+					<img class="footer-brand-image" alt="{translate key="about.aboutThisPublishingSystem"}" src="{$baseUrl}/{$brandImage}">
+				</a>
+			</div>
 		</div>
 	</div>
-</div><!-- pkp_structure_footer_wrapper -->
+</footer><!-- pkp_structure_footer_wrapper -->
 
 {load_script context="frontend"}
 

@@ -42,11 +42,7 @@
 
 		{* Header *}
 		<header>
-			{* Skip to content nav links *}
-			{include file="frontend/components/skipLinks.tpl"}
-
 			<div class="header container-fluid">
-
 				<div class="upper-header row">
 					<h1 class="logo-wrapper col-md-7">
 						<a href="{$homeUrl}" class="home-link">
@@ -95,5 +91,5 @@
 			{assign var=hasSidebar value=0}
 		{/if}
 		<div class="pkp_structure_content{if $hasSidebar} has_sidebar{/if}">
-			<main>
+			<main class="page htmlGalley">
 				<a id="pkp_content_main"></a>
