@@ -27,13 +27,13 @@
 	<div class="pkp_structure_page">
 
 		{* Header *}
-		<header class="pkp_structure_head" id="headerNavigationContainer" role="banner">
+		<header>
 			{* Skip to content nav links *}
 			{include file="frontend/components/skipLinks.tpl"}
 
-			<div class="pkp_head_wrapper">
+			<div class="header container-fluid">
 
-				<div class="pkp_site_name_wrapper">
+				<div class="upper-header row">
 					<button class="pkp_site_nav_toggle">
 						<span>Open Menu</span>
 					</button>
