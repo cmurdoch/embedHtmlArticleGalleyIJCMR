@@ -35,7 +35,5 @@
 	</div>
 </div><!-- pkp_structure_footer_wrapper -->
 
-</div><!-- pkp_structure_page -->
-
 {load_script context="frontend"}
 
