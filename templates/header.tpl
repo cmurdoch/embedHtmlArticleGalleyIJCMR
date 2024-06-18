@@ -11,13 +11,29 @@
  *       represents a page-level override, and doesn't indicate whether or not
  *       sidebars have been configured for thesite.
  *}
-{strip}
-	{* Determine whether a logo or title string is being displayed *}
-	{assign var="showingLogo" value=true}
-	{if !$displayPageHeaderLogo}
-		{assign var="showingLogo" value=false}
-	{/if}
+ {strip}
+ {assign var="showingLogo" value=true}
+ {if !$displayPageHeaderLogo}
+	 {assign var="showingLogo" value=false}
+ {/if}
+
+ {capture assign="homeUrl"}
+	 {url page="index" router=$smarty.const.ROUTE_PAGE}
+ {/capture}
 {/strip}
+
+{capture assign="journalLogo"}
+	{if $displayPageHeaderLogo}
+		<img class="journal-logo" src="{$publicFilesDir}/{$displayPageHeaderLogo.uploadName|escape:"url"}"
+		     {if $displayPageHeaderLogo.altText != ''}alt="{$displayPageHeaderLogo.altText|escape}"
+		     {else}alt="{translate key="common.pageHeaderLogo.altText"}"{/if}>
+	{elseif $displayPageHeaderTitle}
+		<div class="journal-logo-text">{$displayPageHeaderTitle|escape}</div>
+	{else}
+		<img class="journal-logo" src="{$baseUrl}/templates/images/structure/logo.png" alt="{$applicationName|escape}">
+	{/if}
+{/capture}
+
 <!DOCTYPE html>
 <html lang="{$currentLocale|replace:"_":"-"}" xml:lang="{$currentLocale|replace:"_":"-"}">
 {if !$pageTitleTranslated}{capture assign="pageTitleTranslated"}{translate key="article.pageTitle" title=$article->getLocalizedTitle()|escape}{/capture}{/if}
