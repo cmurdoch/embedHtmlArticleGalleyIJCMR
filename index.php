@@ -1,10 +1,10 @@
 <?php
 /**
- * @defgroup plugins_generic_embedHtmlArticleGalleyHeader HTML Article Galley Plugin with Header/Footer
+ * @defgroup plugins_generic_embedHtmlArticleGalleyIJCMR HTML Article Galley Plugin with Header/Footer
  */
 
 /**
- * @file plugins/generic/embedHtmlArticleGalleyHeader/index.php
+ * @file plugins/generic/embedHtmlArticleGalleyIJCMR/index.php
  *
  * Copyright (c) 2014-2020 Simon Fraser University
  * Copyright (c) 2003-2020 John Willinsky
@@ -15,8 +15,8 @@
  *
  */
 
-require_once('EmbedHtmlArticleGalleyHeaderPlugin.inc.php');
+require_once('EmbedHtmlArticleGalleyIJCMRPlugin.inc.php');
 
-return new EmbedHtmlArticleGalleyHeaderPlugin();
+return new EmbedHtmlArticleGalleyIJCMRPlugin();
 
 ?>

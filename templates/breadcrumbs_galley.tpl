@@ -48,7 +48,7 @@
 			<span class="separator">{translate key="navigation.breadcrumbSeparator"}</span>
 		</li>
 		<li class="current" aria-current="page">
-			<span class="galley_type {$type|escape}" aria-current="page">{translate key="plugins.generic.embedHtmlArticleGalleyHeader.galley_type.$type"}</span>
+			<span class="galley_type {$type|escape}" aria-current="page">{translate key="plugins.generic.embedHtmlArticleGalleyIJCMR.galley_type.$type"}</span>
 		</li>
 	</ol>
 </nav>

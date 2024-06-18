@@ -11,14 +11,14 @@ msgstr ""
 "PO-Revision-Date: 2020-09-17T16:39:32+02:00\n"
 "Language: \n"
 
-msgid "plugins.generic.embedHtmlArticleGalleyHeader.displayName"
-msgstr "Alternative HTML Article Galley with header/footer"
+msgid "plugins.generic.embedHtmlArticleGalleyIJCMR.displayName"
+msgstr "Alternative HTML Article Galley with header/footer for IJCMR"
 
-msgid "plugins.generic.embedHtmlArticleGalleyHeader.description"
+msgid "plugins.generic.embedHtmlArticleGalleyIJCMR.description"
 msgstr "This plugin provides rendering support for HTML Article Galleys and supports iPads."
 
-msgid "plugins.generic.embedHtmlArticleGalleyHeader.galley_type.file"
+msgid "plugins.generic.embedHtmlArticleGalleyIJCMR.galley_type.file"
 msgstr "HTML Fulltext"
 
-msgid "plugins.generic.embedHtmlArticleGalleyHeader.galley_type.pdf"
+msgid "plugins.generic.embedHtmlArticleGalleyIJCMR.galley_type.pdf"
 msgstr "PDF Fulltext"

@@ -11,10 +11,10 @@
   * Plugin version information.
   -->
 <version>
-	<application>embedHtmlArticleGalleyHeader</application>
+	<application>embedHtmlArticleGalleyIJCMR</application>
 	<type>plugins.generic</type>
 	<release>1.0.0.0</release>
-	<date>2020-01-27</date>
+	<date>2024-06-18</date>
 	<lazy-load>1</lazy-load>
-	<class>EmbedHtmlArticleGalleyHeaderPlugin</class>
+	<class>EmbedHtmlArticleGalleyIJCMRPlugin</class>
 </version>
