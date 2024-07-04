@@ -18,23 +18,6 @@
 				 </div>
 			{/if}
 			{$html}
-			{* UZH CHANGE OJS-62 sui-generis script for numbering of paragraphs *}
-			<!-- <script>
-				$('.content p').each(function(){
-					var nrid = $(this).attr('id');
-					if (nrid) {
-						var nrid2 = nrid.replace('nr-','');
-						$(this).replaceWith('<p class="nr">'+nrid2+'</p>');
-					}
-				});
-			</script> -->
-			{* END CHANGE OJS-62 *}
-
-			{* UZH CHANGE OJS-79 (GISo) script for responsive tables *}
-			<script>
-				$('table').wrap('<div style="overflow-x:auto;"></div>');
-			</script>
-			{* END UZH CHANGE OJS-79 *}
 
 			{* UZH CHANGE OJS-67 2019/03/08/mb display Licensing info *}
 			{* Licensing info *}
