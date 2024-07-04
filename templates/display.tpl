@@ -60,6 +60,7 @@
 			{/if}
         		{* END UZH CHANGE OJS-67 *}
 		</div>
+	</div>
 
 	{call_hook name="Templates::Common::Footer::PageFooter"}
 	{include file=$footerTemplatePath}
