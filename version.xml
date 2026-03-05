@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE version SYSTEM "../../../lib/pkp/dtd/pluginVersion.dtd">
+
+<!--
+  * plugins/generic/embedHtmlArticleGalleyIJCMR/version.xml
+  *
+  * Copyright (c) 2014-2024 Simon Fraser University
+  * Copyright (c) 2003-2020 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Plugin version information.
+  -->
+<version>
+	<application>embedHtmlArticleGalleyIJCMR</application>
+	<type>plugins.generic</type>
+	<release>3.4.0.0</release>
+	<date>2026-06-02</date>
+	<lazy-load>1</lazy-load>
+	<class>EmbedHtmlArticleGalleyIJCMRPlugin</class>
+</version>
